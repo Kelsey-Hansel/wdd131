@@ -46,6 +46,7 @@ main {
     display: grid;
     grid-template: auto 1fr / 2fr auto;
     padding-top: 5px;
+    max-width: 1000px;
 }
 
 .card {
