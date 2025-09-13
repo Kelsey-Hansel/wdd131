@@ -1,0 +1,29 @@
+@media sceen and (min-width: 500px)
+{
+    header {
+        display: flex;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: rgb(127, 127, 216);
+    }
+
+    #menu {
+        display: none;
+    }
+}
