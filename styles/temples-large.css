@@ -1,32 +1,31 @@
-@media sceen and (min-width: 500px)
+@media screen and (min-width: 600px)
 {
-    header {
-        display: flex;
+    .navigation li {
+        display: contents;
     }
-    
-    nav {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
         display: flex;
         justify-content: right;
         align-items: center;
+        list-style: none;
+        max-width: 760px;
     }
-
-    li {
-        list-style-type: none;
-    }
-
-    nav a {
+    
+    .navigation a {
         display: block;
         text-align: center;
         padding: 15px;
         text-decoration: none;
     }
-
-    nav a:hover {
+    
+    .navigation a:hover,
+    .navigation a:active {
+        color: rgb(108, 159, 226);
         text-decoration: underline;
-        color: rgb(127, 127, 216);
-    }
-
-    #menu {
-        display: none;
     }
 }
