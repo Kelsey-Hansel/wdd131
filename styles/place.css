@@ -1,0 +1,102 @@
+* {
+    --primary-color: darkblue;
+    --secondary-color: goldenrod;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 5px;
+    color: white;
+}
+
+li  {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 5px;
+    color: white;
+}
+
+@media screen and (max-width: 599px)
+{
+    main {
+        display: grid;
+        justify-content: center;
+    }
+    
+    section {
+        border: 1px solid rgba(211, 211, 211, 0.171);
+    }
+
+    img {
+        justify-self: center;
+        margin: 0;
+        padding-top: 15px;
+        background-color: var(--secondary-color);
+    }
+
+    .material-icons {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 600px)
+{
+    .container {
+        position: relative;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 15px;
+        background-color: var(--secondary-color);
+    }
+
+    h2 {
+        background-color: goldenrod;
+        color: white;
+        text-align: left;
+        padding:3px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 40px;
+        right: 1px;
+        background-color:rgba(255, 254, 254, 0.534)
+    }
+
+    .data {
+        position: absolute;
+        top: 40px;
+        left: 1px;
+        background-color: rgba(255, 254, 254, 0.534)
+    }
+
+    svg {
+        display: none;
+    }
+
+    .material-icons {
+        padding-left: 45px;
+    }
+}
