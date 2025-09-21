@@ -47,10 +47,6 @@ footer {
         padding-top: 15px;
         background-color: var(--secondary-color);
     }
-
-    .material-icons {
-        color: white;
-    }
 }
 
 @media screen and (min-width: 600px)
