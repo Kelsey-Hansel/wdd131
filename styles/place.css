@@ -1,6 +1,7 @@
-* {
+:root {
     --primary-color: darkblue;
     --secondary-color: goldenrod;
+    font-family: "Oswald", sans-serif;
 }
 
 body {
@@ -96,7 +97,9 @@ footer {
         display: none;
     }
 
-    .material-icons {
-        padding-left: 45px;
+    .weather h2::after{
+       content: "☁";
+       color: lightgray;
+       padding-left: 35px;
     }
 }
