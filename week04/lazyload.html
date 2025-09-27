@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Example</title>
+    <meta name="description" content="An example of using the lazy loading attribute.">
+    <meta name="author" content="Kelsey Hansel">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Lazy Loading</h1>
+        <img src="images/wichita-temple-design.jpg" alt="Design of the Wichita Temple." width="400px" height="600px">
+        <img src="images/wichita-temple-design.jpg" alt="Design of the Wichita Temple." loading="lazy" width="400px" height="600px">
+        <img src="images/wichita-temple-design.jpg" alt="Design of the Wichita Temple." loading="lazy" width="400px" height="600px">
+        <img src="images/wichita-temple-design.jpg" alt="Design of the Wichita Temple." loading="lazy" width="400px" height="600px">
+        <img src="images/wichita-temple-design.jpg" alt="Design of the Wichita Temple." loading="lazy" width="400px" height="600px">
+        <img src="images/wichita-temple-design.jpg" alt="Design of the Wichita Temple." loading="lazy" width="400px" height="600px">
+    </main>
+    <footer>
+        <p class="grenze-light">
+            &copy;<span id="currentyear"></span> | Kelsey Hansel | Kansas, United States
+        </p>
+        <p class="last-mod">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

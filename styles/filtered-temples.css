@@ -82,13 +82,6 @@ div {
     grid-gap: 10px;
 }
 
-figure {
-    justify-self: center;
-    width: 350px;
-    height: auto;
-    text-align: center;
-}
-
 img {
     padding: 10px;
     width: 70%;
