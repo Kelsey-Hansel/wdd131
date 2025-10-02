@@ -149,25 +149,30 @@ const largeButton = document.querySelector("#large");
 const smallButton = document.querySelector("#small");
 
 homeButton.addEventListener("click", () => {
+    cardContainer.innerHTML = "";
     temples.forEach(createTempleCard);
 })
 
 oldButton.addEventListener("click", () => {
+    cardContainer.innerHTML = "";
     const oldTemples = temples.filter(getDateOld);
     oldTemples.forEach(createTempleCard); 
 });
 
 newButton.addEventListener("click", () => {
+    cardContainer.innerHTML = "";
     const newTemples = temples.filter(getDateNew);
     newTemples.forEach(createTempleCard);
 });
 
 largeButton.addEventListener("click", () => {
+    cardContainer.innerHTML = "";
     const largeTemples = temples.filter(getSizeLarge);
     largeTemples.forEach(createTempleCard);
 });
 
 smallButton.addEventListener("click", () => {
+    cardContainer.innerHTML = "";
     const smallTemples = temples.filter(getSizeSmall);
     smallTemples.forEach(createTempleCard);
 });
