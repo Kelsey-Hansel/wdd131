@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    text-align: center;
+    Background-color: rgb(7, 7, 58);
+    color: white;
+    padding: 15px;
+}
+
+main {
+    padding: 1rem 0;
+}
+
+form {
+    background-color: rgb(198, 198, 236);
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid rgb(171, 171, 235);
+    Border-radius: 5px;
+    max-width: 600px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.italics {
+    font-style: italic;
+}
+
+input[type="submit"] {
+    background-color: rgb(119, 119, 190);
+    border: 1px solid rgb(98, 98, 189);
+    border-radius:5px;
+    width: 10rem;
+    align-self: center;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(90, 90, 221);
+}

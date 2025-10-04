@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="A product review form to practice making an html form.">
+    <meta name="author" content="Kelsey Hansel">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form id="product-form" method="GET" action="review.html">
+            <label for="product-choice">Product Name</label>
+            <select id="product-choice" name="product-choice" required>
+
+            </select>
+            
+            <label for="rating">Overall Rating</label>
+            <input type="radio" id="one-star" name="rating" required>
+            <label for="one-star">&star;</label>
+            <input type="radio" id="two-star" name="rating" required>
+            <label for="two-star">&star;&star;</label>
+            <input type="radio" id="three-star" name="rating" required>
+            <label for="three-star">&star;&star;&star;</label>
+            <input type="radio" id="four-star" name="rating" required>
+            <label for="four-star">&star;&star;&star;&star;</label>
+            <input type="radio" id="five-star" name="rating" required>
+            <label for="five-star">&star;&star;&star;&star;&star;</label>
+
+            <label for="installation-date">Date of Installation</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+
+            <label for="features">Which features did you find useful in the product?</label>
+            <p class="italics">(Check all that apply)</p>
+            <input type="checkbox" id="durability" name="features" value="Durability">
+            <label for="durability">Durability</label>
+            <input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">
+            <label for="ease-of-use">Ease of Use</label>
+            <input type="checkbox" id="performance" name="features" value="Performance">
+            <label for="performance">Performance</label>
+            <input type="checkbox" id="design" name="features" value="Design">
+            <label for="design">Design</label>
+
+            <label for="review-text">Written Review</label>
+            <textarea id="review-text" name="review-text" rows="6"></textarea>
+                
+            <label for="user-name">Your Name</label>
+            <input type="text" id="user-name" name="user-name">
+
+            <input type="submit" id="button" name="button" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Kelsey Hansel | Kansas, United States</p>
+        <p class="last-mod">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
