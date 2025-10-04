@@ -34,7 +34,22 @@ const products = [
     }
 ];
 
-function makeList(product, index)
+const arrayCount = products.length;
+
+const selectionContainter = document.getElementById("#product-choice")
+
+products.forEach(function makeList(products, arrayCount)
 {
-    
-}
+    for (let i = 0; i > arrayCount; i++)
+    {
+        let product = products[i];
+        const option = document.createElement("option");
+        option.textContent = product.name;
+        option.value = product.id;
+        selectionContainer.appendChild(option);
+    }
+});
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+numVisits++;
+localStorage.setItem("numVisits-ls", numVisits);
