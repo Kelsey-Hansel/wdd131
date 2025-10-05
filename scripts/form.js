@@ -36,19 +36,23 @@ const products = [
 
 const arrayCount = products.length;
 
-const selectionContainter = document.getElementById("#product-choice")
+const selectionContainer = document.getElementById("product-choice")
 
-products.forEach(function makeList(products, arrayCount)
-{
-    for (let i = 0; i > arrayCount; i++)
-    {
-        let product = products[i];
-        const option = document.createElement("option");
-        option.textContent = product.name;
-        option.value = product.id;
-        selectionContainer.appendChild(option);
-    }
-});
+const optionOne = document.createElement("option");
+optionOne.textContent = `Choose a Product ...`;
+optionOne.selected = true;
+optionOne.disabled = true;
+optionOne.hidden = true;
+selectionContainer.appendChild(optionOne);
+
+products.forEach(makeOptionList);
+
+function makeOptionList(product, index) {
+    const optionList = document.createElement("option");
+    optionList.textContent = `${product.name}`;
+    optionList.value = `${product.id}`;
+    selectionContainer.appendChild(optionList);
+}
 
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 numVisits++;
