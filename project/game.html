@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Adventure Game</title>
+    <link rel="stylesheet" href="styles/game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wdth,wght@0,100..200,100..900;1,100..200,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/game.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/adventure-game-logo.png">
+            <h1>Choose Your Adventure Game!</h1>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a name="Character" href="character.html">Character</a></li>
+                <li><a name="Game" href="game.html">Game</a></li>
+                <li><a name="Feedback" href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to your adventure!</h2>
+        <p>You are <span id="c-name"></span> a <span id="c-type"></span> in this playthrough.</p>
+        <section>
+            <p>
+                You start your journey in a small town with a map you don't remember having before. You are at the "X" on the map. It shows you 3 places that you could search for unique artifacts (The stars). You also see that it shows markings of different kinds of danger along each path to these artifacts (The "T" represent traps or trouble). What will you do and what do you encounter?
+            </p>
+        </section>
+        <img src="images/map.jpg" class="map">
+        <form>
+            <textarea name="adventure-text" id="adventure-text" placeholder="Enter Your Custom Adventure Here..."></textarea>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Kelsey Hansel | Kansas, United States</p>
+    </footer>
+</body>
+</html>

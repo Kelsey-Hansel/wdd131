@@ -34,8 +34,6 @@ const products = [
     }
 ];
 
-const arrayCount = products.length;
-
 const selectionContainer = document.getElementById("product-choice")
 
 const optionOne = document.createElement("option");
